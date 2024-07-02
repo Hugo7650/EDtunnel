@@ -98,6 +98,7 @@ jobs:
           # input overrides env-defaults, regardless
           environment: ${{ env.WORKERS_ENV }}
         env:
+          UUID: {{ secrets.UUID }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           GIT_COMMIT_ID: ${{ env.GIT_REF }}
 
