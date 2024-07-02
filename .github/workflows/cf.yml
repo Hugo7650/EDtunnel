@@ -95,6 +95,7 @@ jobs:
         uses: cloudflare/wrangler-action@v3.7.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          wranglerVersion: 3.48.0
           # input overrides env-defaults, regardless
           environment: ${{ env.WORKERS_ENV }}
           secrets: UUID
